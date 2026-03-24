@@ -190,10 +190,9 @@
 <body>
   <div class="wrapper">
     <header>
-      <h1>Java Review Flip Cards</h1>
+      <h1>Let me Java Review Flip Cards</h1>
       <p class="lead">
-        Tap a card to flip it. The front side has a fill-in-the-blank prompt, and the back side shows the answer.
-        This version uses neutral sample text in place of offensive wording.
+        Tap a card to flip it. Front card was fill in the blank, the backside is the answer provided
       </p>
     </header>
 
@@ -201,163 +200,75 @@
       <button id="flipAll">Flip All</button>
       <button id="resetAll">Reset</button>
     </div>
-
+    
+    <!--This is print out-->
     <section class="grid" id="cardGrid">
       <article class="flip-card">
         <div class="flip-inner">
           <div class="side front">
             <div>
               <span class="tag">Print-out</span>
-              <p class="question">The program starts by printing <span class="blank">______</span> and <span class="blank">______</span>.</p>
+              <p class="question">This program start printing System.<span class="blank">______</span><span class="blank">______</span>("Hi");</p>
             </div>
             <div class="hint">Tap to reveal the answers.</div>
           </div>
           <div class="side back">
             <div>
               <div class="answer-title">Answer</div>
-              <p class="answer">It prints <code>Print-out</code> and <code>Welcome Zedrick</code>.</p>
+              <p class="answer">System.<code>out</code>.<code>println</code>("Hi");.</p>
             </div>
-            <div class="hint">This is the simple output section.</div>
+            <div class="hint">Can also work on int also</div>
           </div>
         </div>
       </article>
 
+      <!--Declaration-->
       <article class="flip-card">
         <div class="flip-inner">
           <div class="side front">
             <div>
-              <span class="tag">String type</span>
-              <p class="question">The string variable for the name is called <span class="blank">______</span>, and the message is <span class="blank">______</span>.</p>
-            </div>
-            <div class="hint">Tap to check the variable names.</div>
-          </div>
-          <div class="side back">
-            <div>
-              <div class="answer-title">Answer</div>
-              <p class="answer">The variables are <code>name</code> and <code>message</code>.</p>
-            </div>
-            <div class="hint">The code shows basic string declaration.</div>
-          </div>
-        </div>
-      </article>
-
-      <article class="flip-card">
-        <div class="flip-inner">
-          <div class="side front">
-            <div>
-              <span class="tag">Outer class object</span>
-              <p class="question">An object of the outer class is created using <span class="blank">______</span>.</p>
+              <span class="tag">Declaring String type</span>
+              <p class="question">print out the name <br>
+                String name = "Zedrick"; 
+                System.out.println("Hello my name is "+ <span class="blank">______</span>);</p>
             </div>
             <div class="hint">Tap to reveal the object name.</div>
           </div>
           <div class="side back">
             <div>
               <div class="answer-title">Answer</div>
-              <p class="answer">The object is <code>Reviewer obj = new Reviewer()</code>.</p>
+              <p class="answer">System.out.println(<code>"Hello my name is " + name</code>);</p>
             </div>
-            <div class="hint">This object is used to access inner classes.</div>
+            <div class="hint">This can be also the same as Int version</div>
           </div>
         </div>
       </article>
-
+      <!--INT-->
       <article class="flip-card">
         <div class="flip-inner">
           <div class="side front">
             <div>
-              <span class="tag">Data class type</span>
-              <p class="question">The inner data class is named <span class="blank">______</span> and stores <span class="blank">______</span> and <span class="blank">______</span>.</p>
+              <span class="tag">Declaring int type</span>
+              <p class="question">print out the number <br>
+                int number = 24; 
+                System.out.println("Hello my age is "+ <span class="blank">______</span>);</p>
             </div>
-            <div class="hint">Tap to see the class details.</div>
+            <div class="hint">Tap to reveal the object name.</div>
           </div>
           <div class="side back">
             <div>
               <div class="answer-title">Answer</div>
-              <p class="answer">The class is <code>student</code>, and it stores <code>section</code> and <code>year</code>.</p>
+              <p class="answer">System.out.println(<code>"Hello my age is " + number</code>);</p>
             </div>
-            <div class="hint">It has a constructor and a display method.</div>
+            <div class="hint">This can be also the same as String version</div>
           </div>
         </div>
       </article>
 
-      <article class="flip-card">
-        <div class="flip-inner">
-          <div class="side front">
-            <div>
-              <span class="tag">Constructor</span>
-              <p class="question">The constructor receives <span class="blank">______</span> and <span class="blank">______</span> as parameters.</p>
-            </div>
-            <div class="hint">Tap to remember the parameter order.</div>
-          </div>
-          <div class="side back">
-            <div>
-              <div class="answer-title">Answer</div>
-              <p class="answer">It receives <code>String section</code> and <code>int year</code>.</p>
-            </div>
-            <div class="hint">These values are assigned with <code>this.section</code> and <code>this.year</code>.</div>
-          </div>
-        </div>
-      </article>
-
-      <article class="flip-card">
-        <div class="flip-inner">
-          <div class="side front">
-            <div>
-              <span class="tag">Interface</span>
-              <p class="question">The interface is called <span class="blank">______</span>, and it contains the method <span class="blank">______</span>().</p>
-            </div>
-            <div class="hint">Tap to reveal the interface name.</div>
-          </div>
-          <div class="side back">
-            <div>
-              <div class="answer-title">Answer</div>
-              <p class="answer">The interface is <code>Race</code>, and the method is <code>skincolor()</code>.</p>
-            </div>
-            <div class="hint">Interfaces define method requirements.</div>
-          </div>
-        </div>
-      </article>
-
-      <article class="flip-card">
-        <div class="flip-inner">
-          <div class="side front">
-            <div>
-              <span class="tag">Interface implementation</span>
-              <p class="question">The class that implements the interface is <span class="blank">______</span>.</p>
-            </div>
-            <div class="hint">Tap to see the class name.</div>
-          </div>
-          <div class="side back">
-            <div>
-              <div class="answer-title">Answer</div>
-              <p class="answer">The class is <code>Black</code>.</p>
-            </div>
-            <div class="hint">It provides the actual method body for <code>skincolor()</code>.</div>
-          </div>
-        </div>
-      </article>
-
-      <article class="flip-card">
-        <div class="flip-inner">
-          <div class="side front">
-            <div>
-              <span class="tag">Array type</span>
-              <p class="question">Arrays in the example start at index <span class="blank">______</span>, and the first number is <span class="blank">______</span>.</p>
-            </div>
-            <div class="hint">Tap to check the array basics.</div>
-          </div>
-          <div class="side back">
-            <div>
-              <div class="answer-title">Answer</div>
-              <p class="answer">Arrays start at index <code>0</code>, and the first number is <code>1</code>.</p>
-            </div>
-            <div class="hint">The first name in the list is also shown with index 0.</div>
-          </div>
-        </div>
-      </article>
-    </section>
+      
 
     <div class="footer-note">
-      Tip: You can add more cards by copying one <code>.flip-card</code> block and changing the blank/answer text.
+        Note: Im a failure who try hard and get nothing
     </div>
   </div>
 
